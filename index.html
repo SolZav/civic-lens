@@ -47,89 +47,151 @@
         </ul>
       </nav>
 
-      <main>
-      
-      Welcome to Civic Lens
-        We are an independent news organization dedicated to unbiased reporting, investigative journalism, and truth-driven storytelling. At Civic Lens, our mission is to expose the facts, amplify marginalized voices, and shine light on the systems that shape our society.</p>
+    <main id="main-section">
+
+      <section id="welcome">
+      <h2>Welcome to Civic Lens</h2>
+        <p>We are an independent news organization dedicated to unbiased reporting, investigative journalism, and truth-driven storytelling. At Civic Lens, our mission is to expose the facts, amplify marginalized voices, and shine light on the systems that shape our society.</p>
         <blockquote class="tagline">“We don't follow the narrative. We follow the facts.”</blockquote>
+      </section>
 
-      Breaking News
+      <section id="news">
+        <h2>Breaking News</h2>
 
-        Federal Investigation Launched into Water Mismanagement in the Southwest
-        The Department of Justice has announced a full investigation into decades of water distribution practices affecting tribal lands and rural communities.
-        videos/water-management.mp4
+        <section id="news-1">
+          <h3>Federal Investigation Launched into Water Mismanagement in the Southwest</h3>
+          <p>The Department of Justice has announced a full investigation into decades of water distribution practices affecting tribal lands and rural communities.</p>
+          <video src="videos/water-management.mp4" width="320" height="240" controls>Error loading video</video>          
+        </section>
+
+        <section id="news-2">
+        <h3>Voter Suppression Bill Faces Pushback in State Supreme Court</h3>
+        <p>Civil rights advocates argue that the bill disenfranchises thousands of voters and potential voters of color and those in rural areas of the country.</p>
+        <video src="videos/voter-suppression.mp4" width="320" height="240" controls>Error loading</video>
+        </section>
+      </section>
         
-        Voter Suppression Bill Faces Pushback in State Supreme Court
-        Civil rights advocates argue that the bill disenfranchises thousands of voters and potential voters of color and those in rural areas of the country.
-        videos/voter-suppression.mp4
+      <section id="articles">
+        <h2>Featured Articles</h2>
         
-      Featured Articles
+        <div class="article">
+          <h3>The Cost of Silence: Whistleblower Stories from Inside Tech Giants</h3>
+          <p>Former employees speak out about ethical breaches in data privacy and surveillance.</p>
+        </div>
         
-        The Cost of Silence: Whistleblower Stories from Inside Tech Giants
-        Former employees speak out about ethical breaches in data privacy and surveillance.
+        <div>
+          <h3>Unequal Justice: How Bail Systems Harm the Poor</h3>
+          <p>An investigative series on cash bail and its disproportionate impact.</p>
+        </div>
         
-        Unequal Justice: How Bail Systems Harm the Poor
-        An investigative series on cash bail and its disproportionate impact.
+        <div>
+          <h3>Invisible Work: The Lives of Migrant Caregivers</h3>
+          <p>Humanizing the labor that keeps households and economies afloat.</p>
+        </div>
+
+        <div>
+          <h3>Redlined Still: A New Map of Modern-Day Housing Discrimination</h3>
+          <p>Data visualization showing systemic inequality in real estate today.</p>
+        </div>
+
+        <div>
+          <h3>Climate Injustice: Who Pays for Pollution?</h3>
+          <p>Communities of color bear the brunt of environmental damage.</p>
+        </div>
+
+        <div>
+          <h3>Teaching Under Fire: The Fight for Inclusive Education</h3>
+          <p>Teachers navigate book bans, curriculum restrictions, and culture wars.</p>
+        </div>
         
-        Invisible Work: The Lives of Migrant Caregivers
-        Humanizing the labor that keeps households and economies afloat.
+        <div>
+          <h3>Food Deserts and Corporate Abandonment</h3>
+          <p>Why access to nutrition is a zip code lottery.</p>
+        </div>
         
-        Redlined Still: A New Map of Modern-Day Housing Discrimination
-        Data visualization showing systemic inequality in real estate today.
+        <div>
+          <h3>Policing Mental Health: A Broken Response System</h3>
+          <p>Examining police interactions with those in crisis.</p>
+        </div>
         
-        Climate Injustice: Who Pays for Pollution?
-        Communities of color bear the brunt of environmental damage.
+        <div>
+          <h3>The Disinformation Economy</h3>
+          <p>Tracing profit motives behind fake news empires.</p>
+        </div>
         
-        Teaching Under Fire: The Fight for Inclusive Education
-        Teachers navigate book bans, curriculum restrictions, and culture wars.
+        <div>
+          <h3>Facing the Algorithm: AI and Racial Bias</h3>
+          <p>The coded inequalities that shape our lives.</p>
+        </div>
+
+        <div>
+          <h3>The Voting Maze</h3>
+          <p>A guide to understanding your rights amid changing laws.</p>
+        </div>
         
-        Food Deserts and Corporate Abandonment
-        Why access to nutrition is a zip code lottery.
+        <div>
+          <h3>After the Cameras Leave: Long-Term Crisis Recovery</h3>
+          <p>Rebuilding trust and infrastructure in disaster-hit communities.</p>
+        </div>
+      </section>
         
-        Policing Mental Health: A Broken Response System
-        Examining police interactions with those in crisis.
+      <section id="subscribe">  
+        <h2>Stay Informed. Stay Empowered.</h2>
+        <p>Receive text messages with the news you want to know.</p>
+
+        <form method="post" action="https://wp.zybooks.com/form-viewer.php" target="_blank">
         
-        The Disinformation Economy
-        Tracing profit motives behind fake news empires.
+          <div>
+            <label for="name">Name</label>
+            <input id="name" type="text" name="Name" autocomplete="name">
+          </div>
         
-        Facing the Algorithm: AI and Racial Bias
-        The coded inequalities that shape our lives.
+          <div>
+            <label for="mobile">Mobile</label>
+            <input id="mobile" type="tel" name="Mobile" autocomplete="tel">
+          </div>
         
-        The Voting Maze
-        A guide to understanding your rights amid changing laws.
+          <fieldset>
+            <legend>Notification Preferences</legend>
+              
+              <input id="breaking-news" type="checkbox">
+              <label for="breaking-news">Breaking News</label>
+              
+              <input id="politics" type="checkbox">
+              <label for="politics">Politics</label>
+              
+              <input id="weather" type="checkbox">
+              <label for="weather">Weather</label>
+              
+              <input id="sports" type="checkbox">
+              <label for="sports">Sports</label>
+              
+              <input id="entertainment" type="checkbox">
+              <label for="entertainment">Entertainment</label>
+              
+              <input id="world" type="checkbox">
+              <label for="world">World</label>
+
+              <input id="financial" type="checkbox">
+              <label for="financial">Financial</label>
+              
+          </fieldset>
         
-        After the Cameras Leave: Long-Term Crisis Recovery
-        Rebuilding trust and infrastructure in disaster-hit communities.
-        
-        
-      Stay Informed. Stay Empowered.
-        Receive text messages with the news you want to know.
-        
-        Name
-        
-        Mobile
-        
-        Notification Preferences
-        
-        Breaking News
-        Politics
-        Weather
-        Sports
-        Entertainment
-        World
-        Financial
-        
-        Subscribe
+          <input type="submit" id="submit" value="Subscribe">
+        </form>
+      </section>
       
-      Follow Us
-        Twitter/X
-        Instagram
-        YouTube
-        TikTok
-        LinkedIn
+    </main>
+    <footer>
+      <h2>Follow Us</h2>
+        <a href="https://x.com/">Twitter/X</a>
+        <a href="https://www.instagram.com/">Instagram</a>
+        <a href="https://www.youtube.com/">YouTube</a>
+        <a href="https://www.tiktok.com/">TikTok</a>
+        <a href="https://www.linkedin.com/">LinkedIn</a>
         
-        &copy; 2025 Civic Lens. All rights reserved.
-        
+        <p>&copy; 2025 Civic Lens. All rights reserved.</p>
+    </footer>  
         
   <script>
     const toggleButton = document.getElementById('theme-toggle');
