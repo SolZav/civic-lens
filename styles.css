@@ -107,26 +107,81 @@ header, nav {
 
 @media screen and (max-width: 619px) {
   
-  nav label {
-    display: block;
-    color: var(--watchdog-white);
-    background-color: var(--news-flash);
-    padding: 1rem;
-    text-transform: uppercase;
-    text-align: center;
-    font-family: var(--font-body);
-  }
-
   nav ul{
     width: 100%;
     margin: 0;
     padding: 0;
     list-style: none;
     overflow: hidden;
-    text-align: right; 
-    max-height: 0;           
-  } 
+    text-align: center; 
+    max-height: 0;   
+  }
+    
+  nav li a{
+  display: block;
+  padding: 1rem;
+  text-transform: uppercase;
+  background-color: var(--news-flash);
+  color: var(--watchdog-white);
+  font-size: 1rem; 
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  transition: background-color .3s ease-in;
+  text-decoration: none;
+  }
+
+  nav a:hover, nav input:hover {
+      background-color: var(--blue-bulletin);
+      color: var(--watchdog-white);
+  }
+
+  nav label {
+      cursor: pointer;
+      display: block;
+      padding: 1.5rem;
+      user-select: none;
+      color: var(--watchdog-white);
+      background-color: var(--news-flash);
+      padding: 1rem;
+      text-transform: uppercase;
+      text-align: center;
+      font-family: var(--font-body);
+  }
+
+  nav label:hover {
+    background-color: var(--blue-bulletin);
+    color: var(--watchdog-white);
+    border: solid 1px var(--news-flash);
+  }
+
+
+  label span:before, label span:after{
+      background: var(--white);
+      content: "";
+      display: block;
+      height: 100%;
+      position: absolute;
+      transition: all .2s ease-out;
+      width: 100%;
+  }
+
+  label span:before {
+      top: .75rem;
+  }
+  label span:after {
+      top: -.75rem;
+  }
+
+  nav input{
+      display: none;
+  }
+
+  input:checked ~ ul {
+      max-height: 500px;
+  }
 }
+  
+
 
 @media screen and (min-width: 620px) {
 nav label {
@@ -148,6 +203,12 @@ nav ul {
   display: flex;
   gap: 10px;
 }
+
+nav a:hover {
+      background-color: var(--blue-bulletin);
+      border: solid 1px var(--news-flash);
+      color: var(--watchdog-white);
+  }
 
 }
 
@@ -178,6 +239,11 @@ blockquote {
   background-color: var(--news-flash);
   border: var(--truth-text) solid 1.5px;
   box-shadow: -5px 5px 16px var(--truth-text); 
+  transition: 0.5s;
+}
+
+.new:hover {
+  transform: scale(1.03);
 }
 
 #articles {
@@ -189,6 +255,11 @@ blockquote {
   border: var(--story-subtitle) solid 1.5px;
   padding: 0.5rem;
   box-shadow: -5px 5px 16px var(--truth-text);
+  transition: 0.5s;
+}
+
+.article:hover {
+  transform: scale(1.03);
 }
 
 form { 
@@ -220,6 +291,12 @@ fieldset div {
 
 #submit {
   background-color: var(--blue-bulletin);
+  transition: background-color 0.5s;
+}
+
+#submit:hover {
+  background-color: var(--watchdog-white);
+  color: var(--blue-bulletin);
 }
 
 footer {
@@ -231,6 +308,12 @@ footer p {
   text-align: center;
   padding: 1.5rem;
 }
+
+footer a:hover {
+      background-color: var(--blue-bulletin);
+      border: solid 1px var(--news-flash);
+      color: var(--watchdog-white);
+  }
 
 /* ///ADD/// Global Text Styles */
 body {
