@@ -498,6 +498,21 @@ footer a {
 
 
 /* ///ADD/// x-large styles 1024px */
+@media screen and (min-width: 1024px) {
+  #breaking-news {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  
+  #breaking-news div {
+    max-width: 600px;
+  }
+
+  video {
+    width: 100%;
+  }
+}
 
 
 /* ///ADD/// Interaction Queries for color scheme light and dark and motion preference */
@@ -536,5 +551,7 @@ footer a {
 
 /* ///ADD///  Feature Query for :has() that checks if the #menu-toggle is checked */
 @supports (selector(:has(*))) {
-
+  .mobile-nav:has(#menu-toggle:checked) .menu {
+    display: block;
+  }
 }
